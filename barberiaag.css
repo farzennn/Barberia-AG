@@ -1,0 +1,258 @@
+* {
+    font-family: 'Archivo Black', sans-serif;
+    box-sizing : border-box;
+}
+
+body {
+	background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
+}
+
+header {
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    width: 100%;
+}
+
+.container-header {
+    overflow: hidden;
+}
+
+.container-titulo {
+	padding: 0px;
+    text-align: center;
+    width: 100%;
+    overflow: hidden; /* Evita que el texto se desborde */;
+}
+
+.titulo-header {
+    font-size: 80px;
+    font-weight: 800;
+  	font-family: "Kalam", cursive;
+  	font-weight: 700;
+ 	font-style: normal;
+ 	color: lightyellow;
+ 	text-shadow: 4px 8px 2px black;
+}
+
+.container-parrafo {
+    overflow: hidden;
+    width: 100%;
+    text-align: center;
+    font-size: 20px;
+    padding-bottom: 20px;
+    font-size: 25px;
+    margin: 10px;
+    text-shadow: 4px 4px 1px lightgrey;
+}
+
+.container-lista {
+    display: flex; /* Cambiar a flex */
+    gap: 40px; /* En lugar de grid-gap */
+    align-items: center;
+    justify-content: center;/* Alineación de los elementos en el centro */
+    padding-top: 20px;
+    font-size: 25px;
+    padding-bottom: 80px;
+}
+
+/* Puedes mantener tu grid-template aquí si es necesario */
+
+.lista-items {
+	padding: 7px;
+	background: rgb(188,208,255);
+	background: linear-gradient(90deg, rgba(188,208,255,1) 0%, rgba(155,176,255,1) 100%);
+	border-radius: 10% 10%;
+	border: 1px solid black;
+	color: #223;
+
+}
+
+
+.contenedor-turnos {
+	width: 100%;
+	border-top: 2px dotted lightgray;
+	padding: 0px 10px;
+}
+
+.contenedor-titulo-galeria {
+	width: 100%;
+	text-align: center;
+}
+
+.titulo-corte-clientes {
+    font-size: 80px;
+    margin-top: 10px;
+    margin-bottom: 0px;
+  	font-family: "Kalam", cursive;
+  	font-weight: 700;
+ 	font-style: normal;
+ 	color: lightyellow;
+ 	text-shadow: 4px 8px 2px black;
+}
+
+.container__galeria {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-auto-rows: 250px;
+    grid-gap: 10px;
+    padding-bottom: 20px;
+    width: 100%;
+}
+
+.foto-corte {
+    overflow: hidden;
+    border: 3px solid #000;
+    position: relative; /* Añadir posición relativa */
+}
+
+.foto-corte img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+ }
+
+.foto-corte:hover img {
+    transform: scale(1.1);
+    background: blue;
+    opacity: .5;
+  }
+
+.nombre-corte {
+    font-size: 20px;
+    text-align: center;
+    position: absolute; /* Añadir posición absoluta */
+    top: 50%; /* Ajustar la posición verticalmente */
+    left: 50%; /* Ajustar la posición horizontalmente */
+    transform: translate(-50%, -50%); /* Centrar el texto */
+    opacity: 0; /* Inicialmente oculto */
+    transition: opacity 0.3s ease; /* Transición suave */
+}
+
+.foto-corte:hover .nombre-corte {
+    opacity: 1; /* Mostrar el nombre en hover */
+}
+
+
+.container-img {
+  height: 450px;
+  width: 100%;
+  display: grid;
+  object-fit: cover;
+  overflow: hidden;
+  justify-content: center;
+  align-content: center;
+  position: absolute;
+  z-index: -1;
+  opacity: .7
+
+
+}
+
+.imagen-cortando-pelo img {
+	width: 100%;
+	height: auto;
+	margin: auto;
+	z-index: -3;
+
+}
+
+.conteiner-sacarturnos {
+    width: 100%;
+    height: 300px;
+    display: grid;
+    justify-items: center;
+}
+
+.conteiner-titulo-sacarturnos {
+    text-align: center;
+}
+
+.titulo-sacarturnos {
+    margin: 0px;
+    font-size: 80px;
+    font-family: "Kalam", cursive;
+    font-style: normal;
+    color: lightyellow;
+    text-shadow: 4px 7px 2px black;
+}
+
+.container-slogan-sacarturnos {
+    margin: 0px;
+    padding: 0px;
+}
+
+.slogan-sacarturnos {
+  font-size: 30px;
+  font-family: "Barlow Condensed", sans-serif;
+  font-weight: 200;
+  font-style: italic;
+  margin: 0;
+}
+
+
+.container-contactowsp {
+    padding: 17px;
+    background: rgb(188,208,255);
+    background: linear-gradient(90deg, rgba(188,208,255,1) 0%, rgba(155,176,255,1) 100%);
+    border-radius: 10px;
+    border: 1px solid black;
+    align-self: center;
+    color: #223;
+    margin-bottom: 25px;
+}
+
+.url-sacarturno {
+    text-decoration: none;
+    color: blue;
+    text-shadow: 3px 1px 1px whitesm;
+}
+
+.url-sacarturno:hover { 
+    color: lightgoldenrodyellow;
+    text-shadow: 3px 1px 1px black;
+    rotate: 1px;
+}
+
+.container-input {
+	width: 800px;
+	display: grid;
+    justify-content: center;
+    align-items: center;
+	text-align: center;
+	margin: 0 auto;
+	z-index: 10;
+}
+
+.parrafo-exp {
+	font-size: 30px;
+	text-shadow: 2px 4px 1px #aaa;
+	color: #cfa;
+}
+
+.container-input-text > textarea {
+	height: 150px;
+	width: 600px;
+	font-size: 20px;
+	text-decoration: none;
+	background: rgb(215,250,186);
+	background: linear-gradient(90deg, rgba(215,250,186,1) 0%, rgba(213,212,173,1) 100%);
+	border: 3px solid lightsalmon;
+	resize: none;
+}
+
+textarea:hover {
+	height: 150px;
+	width: 600px;
+	font-size: 20px;
+	background: lightyellow;
+	text-decoration: none;
+	border: 3px solid darkgray;
+
+.boton-enviar {
+	margin: 30px;
+	width: 120px;
+	height: 50px;
+}
+
